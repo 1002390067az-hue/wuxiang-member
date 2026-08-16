@@ -35,4 +35,6 @@ if(sessionStorage.getItem('wx_verified')==='1')verify();
 function showAdmin(btn){document.getElementById('memberView').style.display='none';document.getElementById('adminView').style.display='block';document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
 function showMember(btn){document.getElementById('memberView').style.display='block';document.getElementById('adminView').style.display='none';document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
 function redeem(){let e=document.getElementById('redeemCount');e.textContent=String(Number(e.textContent)+1);alert('演示：已核销 1 次，并生成服务记录')}
+const SUPABASE_URL = 'https://oilwpihknxlkftxynczv.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_CdQ2Q_vFsD-TNsgeklJPzA_zT1CrumO';
 </script></body></html>
