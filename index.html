@@ -37,4 +37,5 @@ function showMember(btn){document.getElementById('memberView').style.display='bl
 function redeem(){let e=document.getElementById('redeemCount');e.textContent=String(Number(e.textContent)+1);alert('演示：已核销 1 次，并生成服务记录')}
 const SUPABASE_URL = 'https://oilwpihknxlkftxynczv.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_CdQ2Q_vFsD-TNsgeklJPzA_zT1CrumO';
+document.querySelectorAll('button').forEach(b=>{if(b.textContent.includes('预约服务'))b.onclick=()=>alert('预约功能正在接入')})
 </script></body></html>
